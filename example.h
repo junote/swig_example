@@ -12,6 +12,3 @@ class Example{
     int sumArr(int arr[], int num);
 };
 
-struct Bob{
-    int bob[10];
-};
