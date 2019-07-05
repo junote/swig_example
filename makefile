@@ -8,4 +8,3 @@ clean:
 	rm *.so *.cxx 
 	rm __pycache__ -rf
 	rm build -rf
-	rm example.py

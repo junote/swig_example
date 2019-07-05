@@ -25,11 +25,3 @@ print("a[3] = ", example.intArray_getitem(a,3))
 tmp = obj.sumArr(a,10)
 print(tmp)
 example.delete_intArray(a)
-
-a = example.intArrayclass(10)
-for i in range(10):
-    a[i] = i * 10
-tmp = obj.sumArr(a,10)
-print(tmp)
-print(a[3])
-

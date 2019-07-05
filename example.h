@@ -11,7 +11,3 @@ class Example{
     int strLen(char *s, int *len);
     int sumArr(int arr[], int num);
 };
-
-struct Bob{
-    int bob[10];
-};
