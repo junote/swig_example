@@ -20,11 +20,3 @@ int Example::strLen(char *s, int *len){
     *len = strlen(s) ;
     return 0;
 }
-
-int Example::sumArr(int arr[], int num){
-    int i, sum=0;
-    for(i = 0; i < num; i++){
-        sum += arr[i];
-    }
-    return sum;
-}

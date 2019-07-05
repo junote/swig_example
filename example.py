@@ -95,22 +95,6 @@ except __builtin__.Exception:
         pass
     _newclass = 0
 
-
-def new_intArray(nelements: 'size_t') -> "int *":
-    return _example.new_intArray(nelements)
-new_intArray = _example.new_intArray
-
-def delete_intArray(ary: 'int *') -> "void":
-    return _example.delete_intArray(ary)
-delete_intArray = _example.delete_intArray
-
-def intArray_getitem(ary: 'int *', index: 'size_t') -> "int":
-    return _example.intArray_getitem(ary, index)
-intArray_getitem = _example.intArray_getitem
-
-def intArray_setitem(ary: 'int *', index: 'size_t', value: 'int') -> "void":
-    return _example.intArray_setitem(ary, index, value)
-intArray_setitem = _example.intArray_setitem
 class Example(_object):
     __swig_setmethods__ = {}
     __setattr__ = lambda self, name, value: _swig_setattr(self, Example, name, value)
@@ -132,9 +116,6 @@ class Example(_object):
 
     def strLen(self, s: 'char *') -> "int":
         return _example.Example_strLen(self, s)
-
-    def sumArr(self, arr: 'int []', num: 'int') -> "int":
-        return _example.Example_sumArr(self, arr, num)
 
     def __init__(self):
         this = _example.new_Example()
