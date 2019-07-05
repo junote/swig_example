@@ -105,6 +105,18 @@ class Example(_object):
     def say_hello(self) -> "void":
         return _example.Example_say_hello(self)
 
+    def add(self, x: 'int', y: 'int') -> "void":
+        return _example.Example_add(self, x, y)
+
+    def sub(self, x: 'int *', y: 'int *') -> "int":
+        return _example.Example_sub(self, x, y)
+
+    def negateint(self, n: 'int *') -> "void":
+        return _example.Example_negateint(self, n)
+
+    def strLen(self, s: 'char *') -> "int":
+        return _example.Example_strLen(self, s)
+
     def __init__(self):
         this = _example.new_Example()
         try:
