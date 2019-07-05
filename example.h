@@ -9,4 +9,6 @@ class Example{
     int sub(int *x, int *y);
     void negateint(int *n);
     int strLen(char *s, int *len);
+    int sumArr(int arr[], int num);
 };
+
