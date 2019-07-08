@@ -28,3 +28,17 @@ int Example::sumArr(int arr[], int num){
     }
     return sum;
 }
+
+void Example::bar(double a[2], double b[4])
+{
+  for(int i = 0; i < 2;i++)
+  {
+    printf("%f\t",a[i]);
+  }
+  printf("\n");
+  for(int i = 0; i < 4;i++)
+  {
+    printf("%f\t",b[i]);
+  }
+  printf("\n");
+}

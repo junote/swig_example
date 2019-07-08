@@ -33,3 +33,6 @@ tmp = obj.sumArr(a,10)
 print(tmp)
 print(a[3])
 
+a = [1.0, 2.0]
+b = [1.1,2.2,3.3,4.4]
+obj.bar(a,b)

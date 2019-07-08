@@ -10,5 +10,6 @@ class Example{
     void negateint(int *n);
     int strLen(char *s, int *len);
     int sumArr(int arr[], int num);
+    void bar(double a[2], double b[4]);
 };
 
