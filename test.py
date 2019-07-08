@@ -33,3 +33,12 @@ tmp = obj.sumArr(a,10)
 print(tmp)
 print(a[3])
 
+
+tmp = obj.count('e','hello',5)
+print(tmp)
+
+tmp = example.Point()
+# print(tmp.a, tmp.b, tmp.c)
+rc,tmp  = obj.doublePointer()
+print(rc)
+print(tmp.x, tmp.y, tmp.z)

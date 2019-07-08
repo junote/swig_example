@@ -28,3 +28,33 @@ int Example::sumArr(int arr[], int num){
     }
     return sum;
 }
+
+int Example::print_args(int argc, char *argv[]) {
+  for (int i = 0; i < argc; i++)
+    printf("argv[%d] = %s\n", i, argv[i]);
+  return argc;
+}
+
+int Example::count(char c, char *s, int len) {
+  for (int i = 0; i< len; i++){
+    if (c == s[i])
+      return i;
+  }
+  return -1;
+}
+
+int Example::doublePointer(Point **p)
+{
+  *p = (Point *)malloc(sizeof(Point));
+  (*p)->x = 11;
+  (*p)->y = 22;
+  (*p)->z = 33;
+  return 111;
+}
+
+int Example::printPointer(Point **p)
+{
+  printf("pointer: p.x = %d\t, p.y= %d\t p.z = %d\n", (*p)->x,(*p)->y,(*p)->z);
+
+  return 0;
+}
