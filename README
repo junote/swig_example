@@ -2,3 +2,6 @@ swig example:
 branch a: simple 
 branch b: pointer parameters
 branch c: carray
+branch d: typemap
+branch e: python list to array
+branch f: some more
