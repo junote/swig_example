@@ -28,3 +28,26 @@ int Example::sumArr(int arr[], int num){
     }
     return sum;
 }
+
+void Example::printPoint(Point p)
+{
+  printf("point x = %d, y = %d\n",p.x,p.y);
+}
+
+void Example::swap(Point& a, Point& b)
+{
+    Point tmp;
+    tmp = a;
+    a = b;
+    b =tmp;
+}
+
+string Example:: getString()
+{
+  return "hello,world";
+}
+
+double Example:: average(vector<int> v)
+{
+  return accumulate(v.begin(),v.end(),0.0)/v.size();
+}

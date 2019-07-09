@@ -1,4 +1,6 @@
 %module example
+
+
 %{
 #include "example.h"
 %}
@@ -18,4 +20,13 @@
 %array_class(int,intArrayclass);
 
 
+%include "std_string.i"
+
+
+%include "std_vector.i"
+
+namespace std {
+  %template(vectori) vector<int>;
+};
 %include "example.h"
+
